@@ -72,11 +72,7 @@ if (!defined('__PS_BASE_URI__')) {
             )
         );
     } else {
-        if (!empty(Datas::getInstance()->base_uri)) {
-            define('__PS_BASE_URI__', '/' . trim(Datas::getInstance()->base_uri, '/') . '/');
-        } else {
-            define('__PS_BASE_URI__', '/');
-        }
+        define('__PS_BASE_URI__', '/' . trim(Datas::getInstance()->base_uri, '/') . '/');
     }
 }
 
